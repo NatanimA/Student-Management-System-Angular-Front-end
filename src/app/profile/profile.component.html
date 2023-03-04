@@ -1,0 +1,23 @@
+<div class="card mb-3 mx-auto" style="max-width: 540px;">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src="{{IMAGE_URL + id}}" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">{{student.name}}</h5>
+                <p class="card-text">{{student.bio}}</p>
+                <p class="card-text"><small class="text-muted">{{student.email}}</small></p>
+            </div>
+            <button *ngIf="!display" class="btn btn-info" style="float:right; padding:1.5rem; margin:1rem;" (click)="displayEdit()">
+                Edit
+            </button>
+        </div>
+    </div>
+</div>
+<div *ngIf="display">
+    <app-register></app-register>
+</div>
+
+
+
