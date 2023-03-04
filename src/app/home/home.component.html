@@ -1,0 +1,41 @@
+<form class="d-flex w-50 m-4">
+    <input class="form-control me-2" type="search" placeholder="Search" (keyup)="searchUser()" (input)="searchInputHandler($event)"
+        aria-label="Search">
+    <button class="btn btn-outline-success" type="button" (click)="searchUser()">Search</button>
+</form>
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col w-50" *ngFor="let user of users$; index as i">
+        <div class="card mx-3">
+            <img [src]="IMAGE_URL + user.id"
+                    style="height: 230px;" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{user.name}}</h5>
+                <p class="card-text">{{user.bio}}</p>
+                <div class="w-100 d-flex justify-content-between">
+                    <button (click)="showProfile(user.id)" class="btn btn-primary">
+                        Edit
+                    </button>
+                    <button id="{{user.id}}" (click)="open(content,$event)" class="btn btn-danger">
+                        Delete
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Hi there!</h4>
+        <button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <p>You are trying to permanently delete the user,Are you sure?</p>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-danger" (click)="deleteUser(userId)" (click)="c('Save click')">Delete</button>
+    </div>
+</ng-template>
+
+
+
