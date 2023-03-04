@@ -1,0 +1,33 @@
+<div class="container">
+    <form [formGroup] = "uploadForm" (ngSubmit)="submitForm($event)">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+            type="text"
+            class="form-control"
+            id="name"
+            aria-describedby="name"
+            value="{{data.name}}"
+            (input)="inputHandler($event)">
+        </div>
+        <div class="mb-3">
+            <label for="bio" class="form-label">Bio</label>
+            <textarea type="text" class="form-control" id="bio" aria-describedby="bio" (input)="inputHandler($event)" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="photo" class="form-label">Photo</label>
+            <input type="file" accept="image/png, image/gif, image/jpeg"  class="form-control" id="photo" aria-describedby="photo" (input)="onFileSelect($event)" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" (input)="inputHandler($event)" required>
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" (input)="inputHandler($event)" required>
+        </div>
+        <button type="submit" class="btn btn-primary" >Submit</button>
+    </form>
+</div>
+
