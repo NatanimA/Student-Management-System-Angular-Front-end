@@ -1,9 +1,10 @@
+<!--navigation's to be used-->
 <nav class="navbar navbar-expand-sm navbar-light bg-light">
   <div class="container-fluid">
     <a
     class="navbar-brand"
-    [title]="'students'"
-    [routerLink]="['/students']">
+    [title]="'news'"
+    [routerLink]="['/']">
       <h1>SMS</h1>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -12,7 +13,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
+        <li class="nav-item" *ngIf="status">
           <a
           class="nav-link active"
           aria-current="page"
@@ -29,13 +30,20 @@
           Register
         </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" *ngIf="!status">
           <a class="nav-link" [title]="'Login'" [routerLink]="['/login']">
             Login
+          </a>
+        </li>
+        <li class="nav-item" *ngIf="status">
+          <a class="nav-link" [title]="'Login'" (click)="logout()" [routerLink]="'/'">
+            Logout
           </a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+<!-- Defined routes will be available-->
 <router-outlet></router-outlet>
+

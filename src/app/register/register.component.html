@@ -1,5 +1,5 @@
 <div class="container">
-    <form [formGroup] = "uploadForm" (ngSubmit)="submitForm($event)">
+    <form [formGroup] = "uploadForm" (ngSubmit)="submitForm($event)" [noValidate]="false">
         <div class="mb-3">
             <label for="name" class="form-label">Name</label>
             <input
@@ -12,18 +12,21 @@
         </div>
         <div class="mb-3">
             <label for="bio" class="form-label">Bio</label>
-            <textarea type="text" class="form-control" id="bio" aria-describedby="bio" (input)="inputHandler($event)" required></textarea>
+            <textarea type="text" class="form-control" id="bio" aria-describedby="bio" (input)="inputHandler($event)" ></textarea>
         </div>
         <div class="mb-3">
             <label for="photo" class="form-label">Photo</label>
-            <input type="file" accept="image/png, image/gif, image/jpeg"  class="form-control" id="photo" aria-describedby="photo" (input)="onFileSelect($event)" required>
+            <input type="file" accept="image/png, image/gif, image/jpeg"  class="form-control" id="photo" aria-describedby="photo" (input)="onFileSelect($event)" >
         </div>
-        <div class="mb-3">
+        <div *ngIf="error" class="d-flex align-items-center my-4">
+                    <p class="text-center text-danger fw-bold mx-3 mb-0">Email is already taken please choose different one.</p>
+        </div>
+        <div *ngIf="!update" class="mb-3">
             <label for="email" class="form-label">Email address</label>
             <input type="email" class="form-control" id="email" aria-describedby="emailHelp" (input)="inputHandler($event)" required>
             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
-        <div class="mb-3">
+        <div *ngIf="!update" class="mb-3">
             <label for="password" class="form-label">Password</label>
             <input type="password" class="form-control" id="password" (input)="inputHandler($event)" required>
         </div>

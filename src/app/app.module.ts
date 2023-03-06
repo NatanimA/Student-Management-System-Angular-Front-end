@@ -11,13 +11,16 @@ import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
+import { NewsComponent } from './news/news.component';
 
+// Defined modules and Imports to use in components
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
     ProfileComponent,
-    LoginComponent
+    LoginComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
