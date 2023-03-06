@@ -1,27 +1,157 @@
-# StudentManagement
+<a name="readme-top"></a>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
+<!-- TABLE OF CONTENTS -->
 
-## Development server
+# 📗 Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [📖 About the Project](#about-project)
+    - [🛠 Built With](#built-with)
+        - [Tech Stack](#tech-stack)
+        - [Key Features](#key-features)
+    - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+    - [Setup](#setup)
+    - [Prerequisites](#prerequisites)
+    - [Install](#install)
+    - [Usage](#usage)
+- [👥 Authors](#authors)
+- [⭐️ Show your support](#support)
 
-## Code scaffolding
+<!-- PROJECT DESCRIPTION -->
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# 📖 Student Management System <a name="about-project"></a>
 
-## Build
+> Student Management app that will help you organize a list of registered Students.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+**Studenet Management System** built with Spring Boot and Angular to help organize the list of registered users and track their information. The system enables users to manage and view student details such as registration, admissions, and more. It also helps to quickly identify any anomalies or discrepancies in the student's data. With a user-friendly dashboard, the system helps administrators and faculty access all relevant information from one centralized location. This project is open source and available on GitHub for anyone to contribute to or use.
 
-## Running unit tests
+## 🛠 Built With <a name="built-with" href="https://spring.io/">Spring boot</a>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Tech Stack
+<a name="tech-stack" href="https://spring.io/">Spring boot</a><br>
+<a name="tech-stack" href="https://angular.io/">Angular</a><br>
+<a name="tech-stack" href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">Bootstrap</a>
 
-## Running end-to-end tests
+> This application is built with Spring boot, Angular, and Bootstrap
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://angular.io/">Angular</a></li>
+  </ul>
+  <ul>
+    <li><a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">Bootstrap</a>
+</li>
+  </ul>
+</details>
 
-## Further help
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://spring.io/">Spring boot</a</li>
+  </ul>
+</details>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.mysql.com/">MySQL</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+> Key features are
+
+- **User Authentication**
+- **User Authorization**
+- **User Information tracking**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo">Not deployed yet</a>
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+> To start this application, you need to follow these steps
+
+To get a local copy up and running, follow these steps.
+
+````
+git clone https://github.com/NatanimA/Student-Management-System-Spring-boot-Api.git
+````
+
+### Prerequisites
+
+In order to run this project you need:
+
+
+```sh
+ MySql
+```
+```
+Java
+```
+```
+NodeJs
+```
+
+### Setup
+
+Clone this repository to your desired folder:
+
+````
+git clone https://github.com/NatanimA/Student-Management-System-Spring-boot-Api.git
+````
+
+### Install
+
+> To setup the project and run it you first need to create the database called student_management_development
+
+### Usage
+
+To run the project, Just run it from Intellij CLI
+
+
+
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Natanim Abesha**
+
+- GitHub: [@githubhandle](https://github.com/NatanimA)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/natanim-abesha)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+> If you like the project please give it a star
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

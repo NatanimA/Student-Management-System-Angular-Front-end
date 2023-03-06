@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
 import { NewsComponent } from './news/news.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 const routes: Routes = [
   {path:'', component: NewsComponent},
@@ -14,7 +15,7 @@ const routes: Routes = [
   {path:'register', component: RegisterComponent},
   {path: 'profile/:id', component: ProfileComponent},
   //If unknown route is given redirect to news component
-  { path: '**', component: NewsComponent }
+  { path: '**', component: NotfoundComponent }
 ];
 
 @NgModule({

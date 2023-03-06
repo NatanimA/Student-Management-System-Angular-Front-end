@@ -12,6 +12,7 @@ import { RegisterComponent } from './register/register.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
 import { NewsComponent } from './news/news.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 // Defined modules and Imports to use in components
 @NgModule({
@@ -20,7 +21,8 @@ import { NewsComponent } from './news/news.component';
     RegisterComponent,
     ProfileComponent,
     LoginComponent,
-    NewsComponent
+    NewsComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
