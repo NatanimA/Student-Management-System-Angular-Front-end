@@ -4,13 +4,17 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
+import { NewsComponent } from './news/news.component';
 
 const routes: Routes = [
+  {path:'', component: NewsComponent},
   {path:'students', component: HomeComponent},
   {path: 'login', component: LoginComponent},
-  {path:'', component: HomeComponent},
+  {path:'home', component: HomeComponent},
   {path:'register', component: RegisterComponent},
-  {path: 'profile/:id', component: ProfileComponent}
+  {path: 'profile/:id', component: ProfileComponent},
+  //If unknown route is given redirect to news component
+  { path: '**', component: NewsComponent }
 ];
 
 @NgModule({
