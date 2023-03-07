@@ -20,6 +20,10 @@
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 Student Management System <a name="about-project"></a>
+![stsms](https://user-images.githubusercontent.com/66979348/223153363-d013da11-c123-4093-8784-d5426770dc89.JPG)
+![hmlg](https://user-images.githubusercontent.com/66979348/223153373-a99e248e-317a-474e-974b-956b7021725e.JPG)
+![hmsms](https://user-images.githubusercontent.com/66979348/223153379-ecd782dc-4961-49e2-ae9f-943e4fe553c9.JPG)
+
 
 > Student Management app that will help you organize a list of registered Students.
 
