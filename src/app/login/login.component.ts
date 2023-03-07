@@ -50,6 +50,7 @@ export class LoginComponent {
       }else{
         localStorage.setItem("token",data.data)
         this.app.status = true
+        this.api.Token = data.data
         this.router.navigate(['/students'])
       }
 

@@ -20,8 +20,9 @@ export class ApiService {
   headers:any
   constructor(private http:HttpClient) {
     // Set the headers with the token
-    this.Token = localStorage.getItem("token")
-    console.log("Service called: ",this.Token)
+    if(this.Token === undefined){
+      this.Token = localStorage.getItem("token")
+    }
     this.headers = new HttpHeaders()
               .set('content-type', 'application/json')
               .set('Access-Control-Allow-Origin', '*')

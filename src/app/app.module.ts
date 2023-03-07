@@ -13,7 +13,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
 import { NewsComponent } from './news/news.component';
 import { NotfoundComponent } from './notfound/notfound.component';
-
+import {ApiService} from './api.service';
 // Defined modules and Imports to use in components
 @NgModule({
   declarations: [
@@ -33,7 +33,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
     HttpClientModule,
     RouterModule
   ],
-  providers: [HomeComponent],
+  providers: [HomeComponent,ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
